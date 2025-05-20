@@ -1,0 +1,3 @@
+#Python Dependencies
+Pylance==v2025.5.1
+PythonDebugger==v2025.8.0
