@@ -26,7 +26,9 @@ def filter_sales(sales, threshold=100):
     return [sale for sale in sales if sale >= threshold]
 
 if __name__ == "__main__":
-    sample_sales = [100, 200, 300]
+    sample_sales = [50, 75, 100, 200, 300]
     discounted_sales = apply_discount(sample_sales, discount=0.2)
+    filtered_sales = filter_sales(sample_sales, threshold=100)
+    print("Filtered Sales:", filtered_sales)
     print("Discounted Sales:", discounted_sales)
     print("Total Discounted Sales:", calculate_daily_sales(discounted_sales))
